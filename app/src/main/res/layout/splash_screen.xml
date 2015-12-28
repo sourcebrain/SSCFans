@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <!--imageview
+        android:id="@+id/imglogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:src="@drawable/ic_launcher"
+        android:tilemode="repeat" /-->
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SSC Fans"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Powered By SourceBrain"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sourcebrain.sscfans.activity.ResultsFragment">
+
+
+    <Spinner
+        android:id="@+id/spinnerTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:entries="@array/array_isl_teams"/>
+
+    <ListView
+        android:id="@+id/listResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:dividerHeight="5sp"
+        android:divider="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sourcebrain.islfans.activity.FixturesFragment">
+
+    <Spinner
+        android:id="@+id/spinnerTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:entries="@array/array_isl_teams"/>
+
+    <LinearLayout
+        android:id="@+id/linearTodaysMatch"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/txtTodayMatchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.4"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtTodayTeam1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:text="Athletico De Kolkata" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="Vs"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.4"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtTodayTeam2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:text="Kerala Blasters" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTodayDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="03-OCT, 7.00 PM"/>
+
+        <TextView
+            android:id="@+id/txtTodayVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Nehru Stadium,Chennai" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listFixtures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:dividerHeight="5sp"
+        android:divider="#FFFFFF"/>
+
+</LinearLayout>
